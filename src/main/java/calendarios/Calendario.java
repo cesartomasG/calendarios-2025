@@ -1,31 +1,32 @@
 package calendarios;
 
+import calendarios.evento.EventoUnico;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
-
-import static calendarios.Pending.pending;
+import java.util.stream.Collectors;
 
 public class Calendario {
 
-  // TODO implementar estado, comportamiento y/o polimorfismo según sea neceario
+  private final List<EventoUnico> eventos = new ArrayList<>();
 
-  public void agendar(Evento evento) {
-    // TODO implementar
-    pending();
+  public void agendar(EventoUnico evento) {
+    eventos.add(evento);
   }
 
-  public boolean estaAgendado(Evento evento) {
-    // TODO implementar
-    return pending();
+  public boolean estaAgendado(EventoUnico evento) {
+    return eventos.contains(evento);
   }
 
-  public List<Evento> eventosEntreFechas(LocalDateTime initio, LocalDateTime fin) {
-    // TODO implementar
-    return pending();
+  public List<EventoUnico> eventosEntreFechas(LocalDateTime inicio, LocalDateTime fin) {
+    return eventos.stream()
+        .filter(e -> e.estaEntre(inicio, fin))
+        .collect(Collectors.toList());
   }
 
-  public List<Evento> eventosSolapadosCon(Evento evento) {
-    // TODO implementar
-    return pending();
+  public List<EventoUnico> eventosSolapadosCon(EventoUnico evento) {
+    return eventos.stream()
+        .filter(e -> e.estaSolapadoCon(evento))
+        .collect(Collectors.toList());
   }
 }
