@@ -19,7 +19,7 @@ Incluye funcionalidades como solapamiento de eventos, cálculo de tiempo restant
 - ✅ Consultar cuánto tiempo falta para un evento
 - ✅ Verificar si dos eventos están solapados, y obtener con cuáles del calendario colisionan
 - ✅ Soporte para eventos recurrentes diarios, semanales, mensuales o anuales
-- ✅ Detección de si el usuarie llega a tiempo al próximo evento según su ubicación actual y estimación de viaje
+- ✅ Detección de si el usuario llega a tiempo al próximo evento según su ubicación actual y estimación de viaje
 - ✅ Los eventos pueden tener múltiples recordatorios que se activan según el tiempo restante (por ejemplo, 10 minutos antes)
 
 ## Tecnologías
