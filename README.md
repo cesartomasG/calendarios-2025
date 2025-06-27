@@ -6,7 +6,7 @@ Trabajo práctico realizado para la materia **Diseño de Sistemas** en **UTN FRB
 
 ## Descripción
 
-Este proyecto modela un sistema de gestión de calendarios personales que permite a los usuarios organizar eventos únicos y recurrentes, recibir recordatorios automáticos y verificar si pueden llegar a tiempo a sus próximos compromisos. Se trabaja con principios de diseño orientado a objetos, tests unitarios, integración con servicios externos simulados (como mapas y notificaciones) y una interfaz de uso sencilla y extensible.
+Este proyecto modela un sistema de gestión de calendarios personales que permite a los usuarios organizar eventos únicos y recurrentes, recibir recordatorios y verificar si pueden llegar a tiempo a sus próximos compromisos. Se trabaja con principios de diseño orientado a objetos, tests unitarios, integración con servicios externos simulados (como mapas y notificaciones) y una interfaz de uso sencilla y extensible.
 
 Incluye funcionalidades como solapamiento de eventos, cálculo de tiempo restante, recordatorios configurables y ubicación geográfica, todo probado con **JUnit 5** y **Mockito**.
 
